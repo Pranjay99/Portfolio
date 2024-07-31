@@ -2,6 +2,8 @@
 
 Welcome to my portfolio website! This site showcases my projects, skills, and experience as a Full Stack Developer.
 
+Deployed Link - [https://pranjay-portfolio.netlify.app/](https://pranjay-portfolio.netlify.app/)
+
 ## Features
 
 - **Home Page**: Introduction and a brief overview of who I am.
