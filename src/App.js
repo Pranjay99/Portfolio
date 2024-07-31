@@ -2,7 +2,7 @@
 import './App.css';
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { darkTheme, lightTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
