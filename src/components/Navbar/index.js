@@ -30,7 +30,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <Nav>
       <NavContainer>
         <NavLogo to="/">
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer' }}>
+          <a href="#about" style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
