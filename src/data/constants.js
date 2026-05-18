@@ -281,7 +281,7 @@ export const Bio = {
       description:
         "Built a Multi-Agent LLM platform using LangChain/LangGraph with intelligent routing across SQL, RAG, and Math agents with 70% reduction in manual analysis effort. Implemented Hybrid Search RAG pipeline (BM25 + ChromaDB) with persistent Document Catalog, auto-tagging, and LLM summaries enabling instant cross-session querying across CSV, Excel, and PDFs.",
       image:
-        "./enterpriseQ.png",
+        "./enterpriseqq.png",
       tags: [
         "Python",
         "LangChain",
@@ -323,7 +323,7 @@ export const Bio = {
       description:
         "An AI-powered customer support analytics platform. Upload a CSV of support tickets and get instant dashboards, trend analysis, category breakdowns, sentiment scoring, revenue risk tracking, and AI-generated agent replies — all in a fully responsive web app.",
       image:
-        "./Ticket-management-app.png",
+        "./Ticket.png",
       tags: [
         "React Js",
         "FastAPI", 
