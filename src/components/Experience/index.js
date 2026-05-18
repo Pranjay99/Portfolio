@@ -7,7 +7,7 @@ import { TimelineSeparator } from '@mui/lab';
 import { TimelineConnector } from '@mui/lab';
 import { TimelineContent } from '@mui/lab';
 import { TimelineDot } from '@mui/lab';
-import ExperienceCard from '../Cards/ExperenceCard';
+import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
 
 const Container = styled.div`

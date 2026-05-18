@@ -8,13 +8,17 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Experience from './components/Experence';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import ProjectDetails from "./components/ProjectDetails";
 import Education from './components/Education';
+import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Starfield from 'react-starfield';
+import ScrollProgress from './components/ScrollProgress';
+import BackToTop from './components/BackToTop';
+import AnimatedSection from './components/AnimatedSection';
 
 
 
@@ -47,6 +51,7 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
+        <ScrollProgress />
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
         <Body>
@@ -55,25 +60,37 @@ function App() {
         starCount={3000}
         starColor={[255, 255, 255]}
         speedFactor={0.05}
-        
+
       />
           <Hero />
           </>
           <Wrapper>
-         
-            <Skills />
-            <Experience />
+            <AnimatedSection>
+              <Skills />
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <Experience />
+            </AnimatedSection>
           </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <AnimatedSection>
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          </AnimatedSection>
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }
-          <Education />
+          <AnimatedSection>
+            <Achievements />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Education />
+          </AnimatedSection>
           <Wrapper2>
-          <Contact />
-          <Footer />
+            <AnimatedSection>
+              <Contact />
+            </AnimatedSection>
+            <Footer />
           </Wrapper2>
-         
+          <BackToTop />
         </Body>
       </Router>
     </ThemeProvider>

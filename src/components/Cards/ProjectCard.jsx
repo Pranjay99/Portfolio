@@ -1,21 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-
-const Button = styled.button`
-    display: none;
-    width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
+const CardOverlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
 `
-const Card = styled.div`
+
+const OverlayButton = styled.button`
+    padding: 8px 20px;
+    background: linear-gradient(225deg, #854CE6 0%, #be1adb 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+`
+
+const Card = styled(motion.div)`
     width: 330px;
     height: 490px;
     background-color: ${({ theme }) => theme.card};
@@ -27,14 +46,17 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 14px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    border: 1px solid transparent;
+
     &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
+        box-shadow: 0 0 50px 4px rgba(133, 76, 230, 0.3);
+        border-color: rgba(133, 76, 230, 0.3);
     }
-    &:hover ${Button} {
-        display: block;
+    &:hover ${CardOverlay} {
+        opacity: 1;
     }
 `
 
@@ -44,6 +66,7 @@ const Image = styled.img`
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    object-fit: cover;
 `
 
 const Tags = styled.div`
@@ -57,11 +80,12 @@ const Tags = styled.div`
 
 const Tag = styled.span`
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
+    background-color: ${({ theme }) => theme.primary + '15'};
+    padding: 4px 10px;
     border-radius: 10px;
+    border: 1px solid ${({ theme }) => theme.primary + '30'};
 `
 
 const Details = styled.div`
@@ -80,7 +104,6 @@ const Title = styled.div`
     max-width: 100%;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     text-overflow: ellipsis;
 `
 
@@ -124,11 +147,15 @@ const Avatar = styled.img`
 
 const ProjectCards = ({project,setOpenModal}) => {
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
+        <Card
+            onClick={() => setOpenModal({state: true, project: project})}
+            whileHover={{ y: -10 }}
+            transition={{ duration: 0.3 }}
+        >
             <Image src={project.image}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -137,11 +164,13 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img}/>
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
+            <CardOverlay>
+                <OverlayButton>View Details</OverlayButton>
+            </CardOverlay>
         </Card>
     )
 }

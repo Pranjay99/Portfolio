@@ -42,6 +42,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#achievements">Achievements</NavLink>
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
@@ -67,6 +68,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <MobileLink href="#skills" onClick={() => setIsOpen(false)}>Skills</MobileLink>
             <MobileLink href="#experience" onClick={() => setIsOpen(false)}>Experience</MobileLink>
             <MobileLink href="#projects" onClick={() => setIsOpen(false)}>Projects</MobileLink>
+            <MobileLink href="#achievements" onClick={() => setIsOpen(false)}>Achievements</MobileLink>
             <MobileLink href="#education" onClick={() => setIsOpen(false)}>Education</MobileLink>
             <GitHubButton 
               style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} 

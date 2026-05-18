@@ -90,7 +90,7 @@ export const HeroRightContainer = styled.div`
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled.img.attrs({ loading: 'lazy' })`
   position: relative;
   width: 100%;
   height: 100%;
@@ -98,6 +98,7 @@ export const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
+  box-shadow: 0 0 30px rgba(133, 76, 230, 0.3);
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -123,6 +124,21 @@ export const Title = styled.div`
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
+  }
+`;
+
+export const GradientName = styled.span`
+  background: linear-gradient(135deg, #854CE6 0%, #be1adb 50%, #854CE6 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 `;
 
@@ -161,6 +177,24 @@ export const SubTitle = styled.div`
   @media (max-width: 640px) {
     font-size: 16px;
     line-height: 32px;
+  }
+`;
+
+export const Tagline = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + '80'};
+  margin-top: 8px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 13px;
   }
 `;
 

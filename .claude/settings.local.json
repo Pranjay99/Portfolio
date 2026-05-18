@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/framer-motion/package.json'\\).version\\)\")",
+      "Bash(rm -rf node_modules/framer-motion)",
+      "Bash(npm cache *)",
+      "Bash(npm config *)",
+      "Bash(npm start *)",
+      "Bash(npx react-scripts *)"
+    ]
+  }
+}

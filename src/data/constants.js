@@ -2,12 +2,12 @@ export const Bio = {
     name: "Pranjay Seksaria",
     roles: [
       "Full Stack Developer",
-      "Android Developer",
-      "UI/UX Designer",
-      "Programmer",
+      "AI/ML Engineer",
+      "Data Engineer",
+      "Software Developer",
     ],
     description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+      "Software Developer with expertise in full-stack development, AI/ML, and scalable data pipelines. Experienced in building enterprise platforms, LLM-powered applications, and end-to-end web solutions. Passionate about leveraging technology to solve complex problems and deliver high-impact results.",
     github: "https://github.com/Pranjay99",
     resume:
       "https://drive.google.com/file/d/1aJGm-2k0NZld9dM5nvnbviW-hk4ZWcEY/view?usp=sharing",
@@ -396,6 +396,37 @@ export const Bio = {
     
   ];
   
+  export const achievements = [
+    {
+      id: 0,
+      icon: "🏆",
+      title: "VIT Tech Week Hackathon Organizer",
+      description: "Organized a 36-hour hackathon attracting over 1000 participants as R&D and Creative Head of IEEE SSIT.",
+      date: "2024",
+    },
+    {
+      id: 1,
+      icon: "💼",
+      title: "TATA Advanced Systems - IETM Level 5",
+      description: "Developed military-grade Interactive Electronic Technical Manuals (IETM) of Level 5 software during internship.",
+      date: "2023",
+    },
+    {
+      id: 2,
+      icon: "🎓",
+      title: "B.Tech CSE - VIT Vellore",
+      description: "Graduated with 8.88 CGPA in Computer Science and Engineering from Vellore Institute of Technology.",
+      date: "2025",
+    },
+    {
+      id: 3,
+      icon: "🧠",
+      title: "Brain Tumor Detection - 99.2% Accuracy",
+      description: "Built a deep learning model achieving 99.2% accuracy in detecting brain tumors from medical images.",
+      date: "2023",
+    },
+  ];
+
   export const TimeLineData = [
     { year: 2017, text: "Started my journey" },
     { year: 2018, text: "Worked as a freelance developer" },
