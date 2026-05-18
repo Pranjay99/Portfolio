@@ -1,11 +1,11 @@
 import React from 'react'
 import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, GradientName, Tagline, Span, SubTitle, ResumeButton } from './HeroStyle'
 import Typewriter from 'typewriter-effect';
-import myphoto from '../../Image/AI2.png'
 import HeroBgAnimation from '../../HeroBgAnimation'
 import { motion } from 'framer-motion';
-
 import { Bio } from '../../data/constants';
+
+const myphoto = process.env.PUBLIC_URL + '/profile photo.jpg';
 
 
 const Hero = () => {

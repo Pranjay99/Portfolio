@@ -7,14 +7,13 @@ export const Bio = {
       "Software Developer",
     ],
     description:
-      "Software Developer with expertise in full-stack development, AI/ML, and scalable data pipelines. Experienced in building enterprise platforms, LLM-powered applications, and end-to-end web solutions at companies like Procter & Gamble. Passionate about leveraging technology to solve complex problems and deliver high-impact results.",
+      "Software Developer with expertise in full-stack development, AI/ML, and scalable data pipelines. Experienced in building enterprise platforms, LLM-powered applications, and end-to-end web solutions at companies like Bristol Myers Squibb. Passionate about leveraging technology to solve complex problems and deliver high-impact results.",
     github: "https://github.com/Pranjay99",
     resume:
-      "https://drive.google.com/file/d/1aJGm-2k0NZld9dM5nvnbviW-hk4ZWcEY/view?usp=sharing",
+      "./Pranjay_s_Resume (2).pdf",
     linkedin: "https://www.linkedin.com/in/pranjay99/",
     twitter: "https://x.com/PranjaySeksaria",
     insta: "https://www.instagram.com/pranjay_99/",
-    facebook: "https://www.facebook.com/rishav.chanda.165/",
   };
 
   export const skills = [
@@ -29,7 +28,7 @@ export const Bio = {
         {
           name: "JavaScript",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
         },
         {
           name: "TypeScript",
@@ -40,6 +39,16 @@ export const Bio = {
           name: "C++",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+        },
+        {
+          name: "Java",
+          image:
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        },
+        {
+          name: "HTML",
+          image:
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
         },
         {
           name: "SQL",
@@ -153,27 +162,27 @@ export const Bio = {
         {
           name: "Git",
           image:
-            "https://git-scm.com/images/logos/logomark-orange@2x.png",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
         },
         {
           name: "GitHub",
           image:
-            "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
         },
         {
           name: "Postman",
           image:
-            "https://w7.pngwing.com/pngs/509/390/png-transparent-postman-macos-bigsur-icon-thumbnail.png",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
         },
         {
           name: "VS Code",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
         },
         {
           name: "CI/CD",
           image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg",
         },
       ],
     },
@@ -190,7 +199,7 @@ export const Bio = {
       skills: [
         "Python",
         "LangChain",
-        "LangGraph",
+        "LLM",
         "FastAPI",
         "Databricks",
         "RAG",
@@ -249,7 +258,7 @@ export const Bio = {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHwtOOrV5d3e0njIgJ7tAGCwhA5mtFnkvqA&s",
       school: "Delhi Public School, Aligarh",
       date: "Apr 2019 - Apr 2020",
-      grade: "91.8%",
+      grade: "92%",
       desc: "In 12th grade at Delhi Public School, I specialized in the PCM (Physics, Chemistry, Mathematics) stream, achieving excellence in these core subjects. My academic journey was enriched by participating in advanced science projects, mathematics Olympiads, and coding challenges.",
       degree: "CBSE(XII), PCM",
     },
@@ -258,7 +267,7 @@ export const Bio = {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTHwtOOrV5d3e0njIgJ7tAGCwhA5mtFnkvqA&s",
       school: "Delhi Public School, Aligarh",
       date: "Apr 2017 - Apr 2018",
-      grade: "86.%",
+      grade: "86%",
       desc: "During my 10th grade at Delhi Public School, I developed a strong foundation in various academic subjects, excelling in Mathematics, Science, and Computer Science. ",
       degree: "CBSE(X)",
     },
@@ -268,7 +277,7 @@ export const Bio = {
     {
       id: 0,
       title: "EnterpriseQ",
-      date: "2024 - 2025",
+      date: "2026",
       description:
         "Built a Multi-Agent LLM platform using LangChain/LangGraph with intelligent routing across SQL, RAG, and Math agents with 70% reduction in manual analysis effort. Implemented Hybrid Search RAG pipeline (BM25 + ChromaDB) with persistent Document Catalog, auto-tagging, and LLM summaries enabling instant cross-session querying across CSV, Excel, and PDFs.",
       image:
@@ -283,7 +292,7 @@ export const Bio = {
         "Docker",
       ],
       category: "machine learning",
-      github: "https://github.com/Pranjay99",
+      github: "https://github.com/Pranjay99/EnterpriseQ",
       webapp: "",
     },
     {
@@ -304,28 +313,29 @@ export const Bio = {
         "MongoDB",
       ],
       category: "web app",
-      github: "https://github.com/Pranjay99",
+      github: "https://github.com/Pranjay99/HostelCare",
       webapp: "",
     },
     {
       id: 2,
       title: "Ticket Management System",
-      date: "2024",
+      date: "2026",
       description:
-        "A full-stack ticket management application for tracking, assigning, and resolving support tickets. Features include role-based access control, ticket prioritization, status tracking, and real-time updates for efficient issue resolution workflows.",
+        "An AI-powered customer support analytics platform. Upload a CSV of support tickets and get instant dashboards, trend analysis, category breakdowns, sentiment scoring, revenue risk tracking, and AI-generated agent replies — all in a fully responsive web app.",
       image:
         "./Ticket-management-app.png",
       tags: [
         "React Js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
+        "FastAPI", 
+        "SQLAlchemy",
+        "SQLite",
         "Redux",
         "Tailwind CSS",
+        "Docker"
       ],
       category: "web app",
-      github: "https://github.com/Pranjay99",
-      webapp: "",
+      github: "https://github.com/Pranjay99/Ticket-Management-App",
+      webapp: "https://ticket-management-app-xp87.onrender.com/dashboard",
     },
     {
       id: 3,
@@ -338,7 +348,7 @@ export const Bio = {
       tags: ["Node.js", "Express.js", "JavaScript", "React.js", "Tailwind CSS", "MongoDB", "Machine Learning"],
       category: "machine learning",
       github: "https://github.com/Pranjay99/Mental_Health_prediction-",
-      webapp: "https://github.com/Pranjay99/Mental_Health_prediction-",
+      webapp: "",
     },
     {
       id: 4,
@@ -383,32 +393,6 @@ export const Bio = {
     },
     {
       id: 6,
-      title: "Amazon Clone",
-      date: "Jul 2021",
-      description:
-        "This project is a front-end clone of the Amazon website, showcasing my skills in web development, specifically in the realm of front-end technologies. It replicates the core features and functionalities of the Amazon e-commerce platform, offering users an interactive shopping experience.",
-      image:
-        "https://private-user-images.githubusercontent.com/93260737/265249085-98beb98a-8b68-4a60-b0b5-98e5f84a9cae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIyNTQ0MTcsIm5iZiI6MTcyMjI1NDExNywicGF0aCI6Ii85MzI2MDczNy8yNjUyNDkwODUtOThiZWI5OGEtOGI2OC00YTYwLWIwYjUtOThlNWY4NGE5Y2FlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI5VDExNTUxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk3YTgwZWEyYjkxODk2NzlkOTMyZTM3ZmEwNTEyZmM0NWQ5OTM2ZDExODg3NmM1NzhmYTY2NDdkY2IyYmMwYTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.7inj8_j9m4H1h8EGmnTr1USQvbEP6VyrkVtKXo7dfcA",
-      tags: ["React Js", "CSS", "JavaScript", "Tailwind CSS"],
-      category: "web app",
-      github: "https://github.com/Pranjay99/Amazon_Front-End-Project?tab=readme-ov-file",
-      webapp: "https://github.com/Pranjay99/Amazon_Front-End-Project?tab=readme-ov-file",
-    },
-    {
-      id: 7,
-      title: "Todo Web App",
-      date: "Jun 2021",
-      description:
-        " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-      image:
-        "https://i.imgur.com/Ev6pUoo.png",
-      tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-      category: "web app",
-      github: "https://github.com/Pranjay99/To-Do-list",
-      webapp: "https://rishav-react-todo.netlify.app/",
-    },
-    {
-      id: 8,
       title: "Weather App",
       date: "Dec 2021 - Jan 2022",
       description:
@@ -418,10 +402,10 @@ export const Bio = {
       tags: ["Java", "Android Studio", "Firebase", "XML"],
       category: "android app",
       github: "https://github.com/Pranjay99/Weather-app",
-      webapp: "https://github.com/Pranjay99/Weather-app",
+      webapp: "",
     },
     {
-      id: 9,
+      id: 7,
       title: "Banking App",
       date: "Sep 2022 - Nov 2022",
       description:
@@ -431,7 +415,7 @@ export const Bio = {
       tags: ["Java", "Android Studio", "Firebase", "XML"],
       category: "android app",
       github: "https://github.com/Pranjay99/Banking_App",
-      webapp: "https://github.com/Pranjay99/Banking_App",
+      webapp: "",
     },
   ];
 
@@ -441,13 +425,6 @@ export const Bio = {
       icon: "📄",
       title: "IEEE Published Research Paper",
       description: "Published 'Biometric-Based User Authentication via Behavioral Analysis' at SISIMPACT, 2025.",
-      date: "2025",
-    },
-    {
-      id: 1,
-      icon: "💼",
-      title: "Procter & Gamble - Multi-Agent AI Platform",
-      description: "Led development of an internal Multi-Agent AI platform reducing manual data analysis effort by 70% and job processing time by 60%.",
       date: "2025",
     },
     {
@@ -462,21 +439,14 @@ export const Bio = {
       icon: "☁️",
       title: "Microsoft Azure AI Fundamentals",
       description: "Microsoft Certification in Azure AI Fundamentals.",
-      date: "2024",
+      date: "2022",
     },
     {
       id: 4,
       icon: "🤖",
       title: "AI/ML Certified - Google Collaboration",
       description: "Certified in Artificial Intelligence and Machine Learning in collaboration with Google.",
-      date: "2024",
-    },
-    {
-      id: 5,
-      icon: "🎓",
-      title: "B.Tech CSE - VIT Vellore",
-      description: "Graduated with 8.88 CGPA in Computer Science and Engineering from Vellore Institute of Technology.",
-      date: "2025",
+      date: "2023",
     },
   ];
 
