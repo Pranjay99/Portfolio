@@ -3,7 +3,7 @@ import './App.css';
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 import { useState} from "react";
-import { darkTheme, lightTheme } from './utils/Themes';
+import { darkTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
@@ -45,14 +45,13 @@ const Body = styled.div`
 `;
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
 
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <Router>
         <ScrollProgress />
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Navbar />
 
         <Body>
           <>

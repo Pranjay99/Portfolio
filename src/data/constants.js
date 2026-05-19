@@ -250,7 +250,7 @@ export const Bio = {
       school: "Vellore Institute of Technology, Vellore",
       date: "Oct 2021 - July 2025",
       grade: "8.94 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Vellore Institute of Technology, Vellore. I have completed 6 semesters and have a CGPA of 8.88. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the IEEE SSIT at VIT, where I am learning and working on exciting projects with a team of talented developers.",
+      desc: "Completed my Bachelor's degree in Computer Science and Engineering at VIT Vellore with a CGPA of 8.94. Coursework included Data Structures, Algorithms, OOP, DBMS, Operating Systems, and Computer Networks. Active member of IEEE SSIT, working on projects with a team of talented developers.",
       degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
     },
     {
