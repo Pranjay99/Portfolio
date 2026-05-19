@@ -45,7 +45,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                     >
-                    <Img src={myphoto} alt="hero-image" />
+                    <Img src={myphoto} alt="Pranjay Seksaria - Software Developer" />
                     </HeroRightContainer>
                 </HeroInnerContainer>
 
